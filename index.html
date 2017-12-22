@@ -90,36 +90,7 @@
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			
 			<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
-			<script type="text/javascript">
-			$(document).ready(function() { 
-				var sections = ["intro","skills","contact","works"];
-				var colors = ["#70d5df","#cda4cb","#7da9a5","#a0ab88"];
-				$('#pagepiling').pagepiling({
-					direction: 'horizontal',
-					menu: '#menu',
-					anchors: sections,
-					sectionsColor: colors,
-					loopTop: true,
-					loopBottom: true,
-					navigation: {
-						'position': 'right'
-					},
-					afterRender: function(){
-						$('#pp-nav').addClass('custom');
-					},
-					afterLoad: function(anchorLink, index){
-						if(index>1){
-							$('#pp-nav').removeClass('custom');
-						}else{
-							$('#pp-nav').addClass('custom');
-						}
-					}
-				});
-				//adding css to images
-				$('p > img').addClass('my_image');
-			});
-			</script>
-
+			
     <link rel="icon" type="image/x-icon" href="img/index.ico">
 </head>
 <body>

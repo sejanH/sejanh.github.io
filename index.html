@@ -101,16 +101,6 @@
 					loopBottom: true,
 					navigation: {
 						'position': 'right'
-					},
-					afterRender: function(){
-						$('#pp-nav').addClass('custom');
-					},
-					afterLoad: function(anchorLink, index){
-						if(index>1){
-							$('#pp-nav').removeClass('custom');
-						}else{
-							$('#pp-nav').addClass('custom');
-						}
 					}
 				});
 				//adding css to images
@@ -207,4 +197,5 @@ But there is something <a href="https://github.com/sejanH" target="_blank">here<
 <link rel="stylesheet" href="css/combined.css">
 
 	<script type="text/javascript" async="" src="js/bootstrap.js"></script>
-</body></html>
+
+<div id="pp-nav" style="color: rgb(0, 0, 0); margin-top: -43.5px;" class="right custom"><ul><li data-tooltip=""><a href="#intro" class="active"><span style="border-color: rgb(0, 0, 0);"></span></a></li><li data-tooltip=""><a href="#skills"><span style="border-color: rgb(0, 0, 0);"></span></a></li><li data-tooltip=""><a href="#contact"><span style="border-color: rgb(0, 0, 0);"></span></a></li><li data-tooltip=""><a href="#works"><span style="border-color: rgb(0, 0, 0);"></span></a></li></ul></div></body></html>
